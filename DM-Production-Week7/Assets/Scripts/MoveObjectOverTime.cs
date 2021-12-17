@@ -43,7 +43,7 @@ public class MoveObjectOverTime : MonoBehaviour
         
     }
 
-    void Update()
+    void FixedUpdate()
     {
         if (m_moving)
         {
