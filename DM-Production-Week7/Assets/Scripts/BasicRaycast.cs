@@ -14,12 +14,12 @@ public class BasicRaycast : MonoBehaviour
         if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, m_rayLength, m_layerMask))
         {
             Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * hit.distance, Color.yellow);
-            Debug.Log("Did Hit");
+          //  Debug.Log("Did Hit");
         }
         else
         {
             Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * m_rayLength, Color.white);
-            Debug.Log("Did not Hit");
+         //   Debug.Log("Did not Hit");
         }
     }
 
