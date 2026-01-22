@@ -10,8 +10,11 @@ public class PauseGame : MonoBehaviour
         if (pause)
         {
             Time.timeScale = 0f;
+            GameManager.Instance.SwitchActionMap("UI");
         }
-        else { Time.timeScale = 1f; 
+        else {            
+            Time.timeScale = 1f;
+            GameManager.Instance.SwitchActionMap("Player");
         }
     }
 }
